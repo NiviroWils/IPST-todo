@@ -1,18 +1,12 @@
-import { useTaskStore } from 'entities/task';
+import TaskList from '../../src/widget/TaskList';
+// import AddTaskForm from '../../src/features/AddTaskForm';
 
 const TodoPage = () => {
-    const { tasks } = useTaskStore();
-
     return (
-        <div className="p-4">
-            <h1 className="text-2xl font-bold">Задачи на сегодня</h1>
-            <ul>
-                {tasks.map((task) => (
-                    <li key={task.id} className={task.completed ? 'line-through' : ''}>
-                        {task.text}
-                    </li>
-                ))}
-            </ul>
+        <div className="max-w-lg mx-auto p-4">
+            <h1 className="text-2xl font-bold mb-4">Мои задачи</h1>
+
+            <TaskList />
         </div>
     );
 };

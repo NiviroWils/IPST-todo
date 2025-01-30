@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.0.0",
     "@tanstack/react-query": "^5.65.1",
     "@tanstack/react-store": "^0.7.0",
+    "@tanstack/store": "^0.7.0",
     "autoprefixer": "^9.8.8",
     "classnames": "^2.5.1",
     "postcss": "^7.0.39",
