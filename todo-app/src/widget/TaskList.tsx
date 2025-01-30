@@ -4,7 +4,7 @@ import { taskStore, toggleTask, removeTask } from '../shared/store/taskStore';
 const TaskList = () => {
     const tasks = useSyncExternalStore(taskStore.subscribe, () => taskStore.state.tasks);
 
-    console.log('📋 Текущие задачи:', tasks); // 🔍 Лог в списке задач
+    console.log('Текущие задачи:', tasks);
 
     if (!tasks || tasks.length === 0) {
         return <p className="text-gray-500">Нет задач на сегодня</p>;
